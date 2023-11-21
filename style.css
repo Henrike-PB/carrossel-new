@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+body {
+background-image: url(https://i.gifer.com/origin/d4/d4bc5f0812eb1e0568a0f5ab140606f0.gif); 
+/* background: #6f6f6f; */
+background-size: cover;
+background-repeat: no-repeat;
+font-family: sans-serif;
+color: #c5c5c5;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px; 
+}
+
+.carrosel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear;
+
+}
+
+.imagem {
+    position: absolute; 
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+    border-radius: 20px;
+}
+
+.imagem span {
+    margin: auto;
+    font-size: 1.2em;
+
+}
+
+@keyframes rotate360 {
+    
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+
+}
+
+.imagem:nth-child(1) {
+    background-image: url(https://images5.alphacoders.com/803/thumbbig-803489.webp); 
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2) {
+     background-image: url(https://i.pinimg.com/originals/69/b8/a8/69b8a851e6ef211897d113cf33b3b6dd.jpg); 
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3) {
+    background-image: url(https://pm1.aminoapps.com/7699/17c06c801904e2784d37ca89a6b86f7c84187422r1-640-480v2_uhq.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4) {
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/544134047234389110/37B9DEC99B4281FCBA798438F109E3468A1280CB/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5) {
+    background-image: url(https://overplay.com.br/wp-content/uploads/2022/04/capa-elden-ring-radahn-overplay.webp);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6) {
+    background-image: url(https://wallpapercosmos.com/w/full/1/e/c/12212-3840x2160-desktop-4k-elden-ring-wallpaper-image.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7) {
+    background-image: url(https://i.pinimg.com/originals/fb/25/cc/fb25ccbc680f84eaa14a271ffe7e84ff.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8) {
+    background-image: url(https://i.pinimg.com/originals/b6/1e/61/b61e616de8348e02f4695851a0633d58.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9) {
+    background-image: url(https://images6.alphacoders.com/124/1248290.png);
+    transform: rotateY(320deg) translateZ(430px);
+}
